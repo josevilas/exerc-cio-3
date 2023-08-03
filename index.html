@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Exercício 3</title>
+   Digite sua idade: <input id="idade" type="number">
+   Você tem carteira <input id="carteira" type="text">
+   <button onclick="teste()">Testar</button>
+
+   <script type="text/javascript">
+      function teste() {
+         var num = parseFloat(document.getElementById("idade").value);
+         var cart = document.getElementById("carteira").value;
+
+         if (num >= 18 && cart == "sim")
+            alert(" Pode dirigir");
+         else if (num < 18 && cart =="não"  )
+            alert(" Não pode dirigir");
+         else
+            alert("nada informado");
+
+      }
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
